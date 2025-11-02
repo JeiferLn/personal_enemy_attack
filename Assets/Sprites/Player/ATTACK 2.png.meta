@@ -128,12 +128,12 @@ TextureImporter:
       name: ATTACK 2_0
       rect:
         serializedVersion: 2
-        x: 28
-        y: 22
-        width: 33
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 23
+        y: 23
+        width: 52
+        height: 44
+      alignment: 9
+      pivot: {x: 0.45, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -150,12 +150,12 @@ TextureImporter:
       name: ATTACK 2_1
       rect:
         serializedVersion: 2
-        x: 120
-        y: 22
-        width: 51
-        height: 34
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 119
+        y: 23
+        width: 52
+        height: 44
+      alignment: 9
+      pivot: {x: 0.42, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -172,12 +172,12 @@ TextureImporter:
       name: ATTACK 2_2
       rect:
         serializedVersion: 2
-        x: 215
-        y: 22
-        width: 44
-        height: 34
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 211
+        y: 23
+        width: 52
+        height: 44
+      alignment: 9
+      pivot: {x: 0.48, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -194,12 +194,12 @@ TextureImporter:
       name: ATTACK 2_3
       rect:
         serializedVersion: 2
-        x: 311
-        y: 22
-        width: 37
-        height: 34
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 306
+        y: 23
+        width: 52
+        height: 44
+      alignment: 9
+      pivot: {x: 0.49, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -216,12 +216,12 @@ TextureImporter:
       name: ATTACK 2_4
       rect:
         serializedVersion: 2
-        x: 407
-        y: 22
-        width: 37
-        height: 34
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 401
+        y: 23
+        width: 52
+        height: 44
+      alignment: 9
+      pivot: {x: 0.51, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -238,7 +238,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e99f75a7c1298244a81760f19a5b6bc
     internalID: 0
     vertices: []
     indices: 

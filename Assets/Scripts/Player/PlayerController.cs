@@ -10,10 +10,12 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Transform PlayerGroundFeet;
     [SerializeField] private float groundCheckRadius = 1f;
 
-    private bool isGrounded;
     private float moveInput;
+    private bool isGrounded;
     private bool jumpPressed;
     private bool isRunning;
+    private bool attackPressed;
+    private bool isAttacking;
 
     void Start()
     {
@@ -26,9 +28,14 @@ public class PlayerController : MonoBehaviour
         moveInput = Input.GetKey(KeyCode.A) ? -1 : Input.GetKey(KeyCode.D) ? 1 : 0;
         isRunning = Input.GetKey(KeyCode.LeftShift);
 
-        if (Input.GetButtonDown("Jump"))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             jumpPressed = true;
+        }
+
+        if (Input.GetButtonDown("Fire1"))
+        {
+            attackPressed = true;
         }
     }
 
@@ -41,16 +48,24 @@ public class PlayerController : MonoBehaviour
         UpdateAnimation(moveInput != 0, isRunning);
 
         Jump();
+        Attack();
     }
 
     private void Move(float speed)
     {
-        rb.linearVelocity = new Vector2(moveInput * speed, rb.linearVelocity.y);
+        if (!isAttacking)
+        {
+            rb.linearVelocity = new Vector2(moveInput * speed, rb.linearVelocity.y);
+        }
+        else
+        {
+            rb.linearVelocity = new Vector2(0, rb.linearVelocity.y);
+        }
     }
 
     private void Jump()
     {
-        if (jumpPressed && isGrounded && rb.linearVelocity.y <= 0.1f)
+        if (jumpPressed && isGrounded && rb.linearVelocity.y <= 0.1f && !attackPressed)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
             jumpPressed = false;
@@ -59,7 +74,7 @@ public class PlayerController : MonoBehaviour
 
     private void UpdateAnimation(bool isWalking, bool isRunning)
     {
-        if (isWalking)
+        if (isWalking && !attackPressed)
         {
             transform.localScale = new Vector3(Mathf.Sign(moveInput) * Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
             animator.SetBool("isWalking", !isRunning);
@@ -71,5 +86,21 @@ public class PlayerController : MonoBehaviour
             animator.SetBool("isRunning", false);
         }
 
+    }
+
+    private void Attack()
+    {
+        if (attackPressed && isGrounded)
+        {
+            animator.SetBool("isAttacking", true);
+            isAttacking = true;
+            attackPressed = false;
+        }
+    }
+
+    private void OnAttackAnimationEnd()
+    {
+        animator.SetBool("isAttacking", false);
+        isAttacking = false;
     }
 }

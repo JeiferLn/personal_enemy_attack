@@ -131,12 +131,12 @@ TextureImporter:
       name: ATTACK 3_0
       rect:
         serializedVersion: 2
-        x: 23
-        y: 22
-        width: 38
-        height: 34
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 24
+        y: 23
+        width: 52
+        height: 44
+      alignment: 9
+      pivot: {x: 0.38, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -153,12 +153,12 @@ TextureImporter:
       name: ATTACK 3_1
       rect:
         serializedVersion: 2
-        x: 124
-        y: 22
-        width: 30
-        height: 38
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 125
+        y: 23
+        width: 52
+        height: 44
+      alignment: 9
+      pivot: {x: 0.28, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -175,12 +175,12 @@ TextureImporter:
       name: ATTACK 3_2
       rect:
         serializedVersion: 2
-        x: 219
-        y: 22
-        width: 53
-        height: 46
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 220
+        y: 23
+        width: 52
+        height: 44
+      alignment: 9
+      pivot: {x: 0.3, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -197,12 +197,12 @@ TextureImporter:
       name: ATTACK 3_3
       rect:
         serializedVersion: 2
-        x: 315
-        y: 22
-        width: 53
-        height: 45
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 316
+        y: 23
+        width: 52
+        height: 44
+      alignment: 9
+      pivot: {x: 0.3, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -219,12 +219,12 @@ TextureImporter:
       name: ATTACK 3_4
       rect:
         serializedVersion: 2
-        x: 410
-        y: 22
-        width: 54
-        height: 37
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 411
+        y: 23
+        width: 52
+        height: 44
+      alignment: 9
+      pivot: {x: 0.318, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -241,12 +241,12 @@ TextureImporter:
       name: ATTACK 3_5
       rect:
         serializedVersion: 2
-        x: 508
-        y: 22
-        width: 34
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 509
+        y: 23
+        width: 52
+        height: 44
+      alignment: 9
+      pivot: {x: 0.3, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -263,7 +263,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 76d893be0fff5ca46977d4f4851b91f5
     internalID: 0
     vertices: []
     indices: 
